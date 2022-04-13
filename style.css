@@ -2,8 +2,9 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+
 header {
-	background: #BBBBBB;
+	background:linear-gradient(175deg,#0E185F, #2FA4FF, #00FFDD, #E8FFC2);;
 	padding: 20px 0;
 }
 
@@ -22,20 +23,34 @@ nav {
 nav li {
 	display: inline;
 	margin: 0 0 0 15px;
+	padding: 20px;
 }
 
 nav a {
 	text-transform: uppercase;
 	color: #000000;
-	font-weight: bold;
-	font-size: 22px;
 	text-decoration: none;
+	font-weight: bold;
+    font-size: 16px;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
 }
 
 nav a:hover {
-	color: #C78C19;
-	text-decoration: underline;
+	text-decoration:none;
+	font-size: 25px;
+	transition:0,5s;
+	background: #99FFCD;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #99FFCD,
+                0 0 25px #99FFCD,
+                0 0 50px #99FFCD,
+                0 0 10px #99FFCD;
 }
+
 
 .produtos {
 	width: 940px;
@@ -94,12 +109,8 @@ footer {
 	margin: 20px 0 0;
 }
 
-main {
-	
-}
-
 form {
-	margin: 40px 0;
+	margin: 40px 0 40px 40px;
 }
 
 form label, form legend {
@@ -122,7 +133,7 @@ form label, form legend {
 .enviar {
 	width:40%;
 	padding: 15px 0;
-	background: orange;
+	background: #30AADD;
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
@@ -133,19 +144,14 @@ form label, form legend {
 }
 
 .enviar:hover {
-	background: darkorange;
+	background: #00FFC6;
 	transform: scale(1.2);
 }
 
 table {
-	margin: 20px 0 40px;
+	margin: 20px 0 40px 40px;
 }
 
-thead {
-	background: #555555;
-	color: white;
-	font-weight: bold;
-}
 
 td, th {
 	border: 1px solid #000000;
@@ -192,12 +198,13 @@ td, th {
 
 .mapa {
 	padding: 3em 0;
-	background: linear-gradient(#FEFEFE, #888888);
+	background: linear-gradient(2deg, #2FA4FF, #00FFDD, transparent);
 }
 
 .mapa-conteudo {
 	width: 940px;
 	margin: 0 auto;
+	box-shadow: 10px 10px 10px 0 #000000;
 }
 
 .mapa p {
@@ -207,7 +214,7 @@ td, th {
 
 .beneficios {
 	padding: 3em 0;
-	background: #888888;
+	background: linear-gradient(180deg,#2FA4FF, #0E185F);
 }
 
 .conteudo-beneficios {
@@ -265,4 +272,22 @@ td, th {
 	.lista-beneficios, .imagem-beneficios {
 		width: 100%;
 	}
+}
+
+
+/*css da scrollbar */
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: #00FFC6;
+	border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #30AADD;
+	border-radius: 30px;
+	box-shadow: inset 2px 2px 0px 1px rgba(221, 213, 213, 0.932), inset -2px -2px 2px rgb(0 0 0 / 25%);
 }
